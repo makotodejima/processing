@@ -6,13 +6,21 @@ void setup() {
   background(255);
 };
 
-void draw() {
+//void draw() {
+  //float ms = abs(mouseX - pmouseX);
+  //stroke(0);
+  //strokeWeight(ms);
+  //line(pmouseX, pmouseY, mouseX, mouseY);
+//};
   
- 
-  float ms = abs(mouseX - pmouseX);
-  stroke(0);
-  strokeWeight(ms);
-  stroke(0);
-  line(pmouseX, pmouseY, mouseX, mouseY);
+void mousePressed() {
+  noStroke();
+  fill(30);
+  rectMode(CENTER);
+  rect(mouseX, mouseY, 120, 120);
   
+};
+
+void keyPressed() {
+  background(255);
 };

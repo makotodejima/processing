@@ -15,12 +15,35 @@
 //    line(mouseX, mouseY, pmouseX, pmouseY);
 //  }
 //}
-size(800, 600);
-rect(50, 50, 40, 40);
-ellipse(70, 50, 40, 40);
-ellipse(60, 50, 6, 3);
-ellipse(80, 50, 6, 3);
-line(30, 10, 50,70);
-line(110, 10, 90, 70);
-line(50, 90, 50, 120);
-line(80, 90, 80, 120);
+
+/**
+ * This is my first monster 
+ *  
+ */
+
+void setup() {
+  size(400, 400);
+  ellipseMode(CENTER);
+  rectMode(CENTER);
+  
+};
+
+void draw() {
+  background(255);
+  
+  
+  fill(200,200,200);
+  rect(mouseX, mouseY, 40, 40);
+  ellipse(mouseX, mouseY - 40, 40, 40);
+  fill(255,255,0);
+  ellipse(mouseX -10, mouseY-40, 6, 3);
+  ellipse(mouseX +10, mouseY-40, 6, 3);
+  line(mouseX -30, mouseY + 50, mouseX -20,mouseY -20);
+  line(110, 10, mouseX +20, mouseY);
+  line(mouseX-10, mouseY + 20, mouseX-10, mouseY + 80);
+  line(mouseX+10, mouseY + 20, mouseX+10, mouseY + 80);
+  
+  stroke(0);
+  line(pmouseX, pmouseY, mouseX, mouseY);
+  
+};

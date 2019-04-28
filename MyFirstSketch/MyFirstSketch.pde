@@ -29,8 +29,9 @@ void setup() {
 };
 
 void draw() {
-  background(255);
   
+  // if you put background here, you can erace the previous rendering. that way i see only one newest monster
+ background(255);
   
   fill(200,200,200);
   rect(mouseX, mouseY, 40, 40);
@@ -43,7 +44,5 @@ void draw() {
   line(mouseX-10, mouseY + 20, mouseX-10, mouseY + 80);
   line(mouseX+10, mouseY + 20, mouseX+10, mouseY + 80);
   
-  stroke(0);
-  line(pmouseX, pmouseY, mouseX, mouseY);
   
 };

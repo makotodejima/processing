@@ -23,4 +23,4 @@ void mousePressed() {
 
 void keyPressed() {
   background(255);
-};
+}

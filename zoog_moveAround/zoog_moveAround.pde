@@ -46,7 +46,7 @@ void draw() {
   //zoogX = random(100, width - 100);
   //zoogY = zoogY - random(5);
   
-  facedia = facedia + random(-20, 20);
+  facedia = facedia + random(-10, 10);
   
   eyeR = random(255);
   eyeG = random(255);

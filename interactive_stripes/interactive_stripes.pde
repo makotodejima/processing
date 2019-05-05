@@ -17,9 +17,6 @@ void draw() {
 
 
 
-
-
-
 class Stripe {
   float x;
   float speed;

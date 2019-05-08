@@ -14,16 +14,16 @@ void draw() {
 
   float xoff = start;
   beginShape();
-  for (float x =0; x <width; x++) {
+  for (float x =0; x < width; x++) {
     stroke(255);
-    
+
     float y = noise(xoff) * height;
     vertex(x, y);
-    
-    
+
+
     xoff = xoff + inc;
-    
   }
   start += inc;
+
   endShape();
 };
